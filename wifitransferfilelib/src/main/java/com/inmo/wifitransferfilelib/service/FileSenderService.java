@@ -229,20 +229,20 @@ public class FileSenderService extends IntentService {
                 fileTransfer.setFileSize(outputFile.length());
                 fileTransfer.setFilePath(outputFilePath);
 
-                int index = 0;
-                while (ipAddress.equals("0.0.0.0") && index < 5) {
-                    Log.e(TAG, "ip: " + ipAddress);
-                    ipAddress = WifiLManager.getHotspotIpAddress(this);
-                    index++;
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-                if (ipAddress.equals("0.0.0.0")) {
-                    return;
-                }
+//                int index = 0;
+//                while (ipAddress.equals("0.0.0.0") && index < 5) {
+//                    Log.e(TAG, "ip: " + ipAddress);
+//                    ipAddress = WifiLManager.getHotspotIpAddress(this);
+//                    index++;
+//                    try {
+//                        Thread.sleep(1000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//                if (ipAddress.equals("0.0.0.0")) {
+//                    return;
+//                }
 
                 socket = new Socket();
                 socket.bind(null);
