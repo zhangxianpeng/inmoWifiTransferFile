@@ -158,7 +158,7 @@ public class FileSenderActivity extends BaseActivity {
     }
 
     public void connectWifiHost(View view) {
-        connectWifi("AndroidShare_4506", "2bd6e88108a0", "WPA");
+        connectWifi("AndroidShare_8691", "7ebc86eca20b", "WPA");
     }
 
     private WifiBroadcastReceiver wifiReceiver;

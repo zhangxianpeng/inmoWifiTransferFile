@@ -215,6 +215,7 @@ public class FileReceiverService extends IntentService {
                     //因为上面在计算文件传输进度时因为小数点问题可能不会显示到100%，所以此处手动将之设为100%
                     progressChangListener.onProgressChanged(fileTransfer, 0, 100, 0, 0, 0, 0);
                     //开始计算传输到本地的文件的MD5码
+                    progressChangListener.onTransferSucceed(fileTransfer);
                     progressChangListener.onStartComputeMD5();
                 }
             } catch (Exception e) {

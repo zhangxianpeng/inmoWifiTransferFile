@@ -124,7 +124,6 @@ public class FileReceiverActivity extends BaseActivity {
     };
 
     private ImageView iv_image;
-    private WifiManager wifiManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
