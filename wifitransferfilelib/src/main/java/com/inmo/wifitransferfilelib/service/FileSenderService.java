@@ -182,7 +182,7 @@ public class FileSenderService extends IntentService {
     }
 
     private String getOutputFilePath(Context context, Uri fileUri, String fileType, String fileName) throws Exception {
-        String outputFilePath = context.getExternalCacheDir().getAbsolutePath() + File.separatorChar + fileName + "." + fileType;
+        String outputFilePath = context.getExternalCacheDir().getAbsolutePath() + File.separatorChar + fileName;
         File outputFile = new File(outputFilePath);
         if (!outputFile.exists()) {
             outputFile.getParentFile().mkdirs();
